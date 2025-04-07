@@ -1,0 +1,1243 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* overflow: hidden; */
+}
+a {
+    text-decoration: none;
+}
+
+/* 背景淺灰色 */
+body {
+    background-color: #f0f0f0;
+}
+
+/* 頁首滿版 背景白色 固定在畫面上 底部分隔線 */
+header {
+
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+    border-bottom: 1px solid #f8f8f8;
+
+    /* 不放margiin輪播圖會跑到hearder後面 */
+    /* margin-bottom: 20vh; */
+}
+
+/* 頁首元件控制 */
+/* 圖片212.17+670 */
+.header_all {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1220px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+}
+
+/* 摺疊菜單 */
+.menu-icon {
+    display: none;
+    position: absolute;
+    left: 0;
+    /* 顯示摺疊菜單按鈕 */
+    flex-direction: column;
+    gap: 5px;
+    margin-left: 15px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.sidebar-menu {
+    padding: 20px;
+}
+
+.close-menu {
+    margin-bottom: 10px;
+    font-size: 20px;
+    border: none;
+    background-color: transparent;
+    color: gray;
+}
+
+.menu-icon div {
+    width: 25px;
+    height: 3px;
+    background: black;
+}
+
+.menu-content {
+    font-size: 25px;
+}
+
+.menu-content button {
+    border: none;
+    background-color: transparent;
+    color: gray;
+}
+
+.menu-content button:hover {
+    color: white;
+}
+
+ul li {
+    margin-bottom: 10px;
+    background-color: transparent;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    /* 移除內邊距 */
+    margin: 0;
+    /* 移除外邊距 */
+}
+
+/* logo控制 */
+#icon {
+    height: 100px;
+    margin: 0 60px;
+}
+
+/* 搜尋框控制 */
+.search-all {
+    width: 692px;
+    height: 20px;
+    /* background-color: lightblue; */
+    margin: 0 25px;
+    position: relative;
+    border: 0px;
+}
+
+/* 搜尋框設定 */
+.search input[type="text"] {
+    top: 30px;
+    width: 670px;
+    /* padding: 20px; */
+    padding: 0 10px;
+    font-size: 14px;
+    border-radius: 2vw;
+    border: none;
+    height: 33px;
+    background-color: rgba(128, 128, 128, 0.2);
+}
+
+/* 搜尋框按鈕設定 */
+.search-icon {
+    position: absolute;
+    right: 10px;
+    top: -5px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+/* 關鍵字排版 */
+.quick-links {
+    margin-top: 3px;
+    margin-left: 10px;
+    position: absolute;
+}
+
+/* 關鍵字設定 */
+.keywords {
+    color: #b1c1cc;
+    font-size: 12px;
+    text-decoration: none;
+    margin-right: 0.4em;
+
+}
+
+/* 購物車框架 */
+.cart-all {
+    display: flex;
+    width: 100px;
+    flex-direction: column;
+    align-items: center;
+
+    padding-top: 1vh;
+    /* background-color: lightblue; */
+}
+
+.cart-all:hover>.cart-word {
+    color: #000;
+}
+
+/* 購物車圖示按鈕 */
+.cart-icon {
+
+    /* margin-left: -1vw; */
+    /* border: 1px solid blue; */
+    justify-self: center;
+    width: 2vw;
+    cursor: pointer;
+    background-color: white;
+    border: none;
+
+}
+
+/* 購物車文字 */
+.cart-word {
+    font-size: 1rem;
+    /* margin-left: -1vw; */
+    /* border: 1px solid red; */
+    color: gray;
+    text-align: left;
+    text-align: center;
+}
+
+.cart h2 {
+    display: inline;
+}
+
+/* RWD搜尋按鈕 */
+.search-button {
+    display: none;
+    position: absolute;
+    right: 0;
+    margin-top: 10px;
+}
+
+.search-button:hover>.search-word {
+    color: #000;
+}
+
+.search-btn {
+    position: relative;
+    left: 10px;
+    cursor: pointer;
+    background-color: white;
+    border: none;
+}
+
+.search-word {
+    font-size: 1rem;
+    /* margin-left: -1vw; */
+    /* border: 1px solid red; */
+    color: gray;
+    text-align: left;
+    text-align: center;
+    width: 50px;
+}
+
+.close-search{
+    display: none;
+    position: absolute;
+
+    border: none;
+    background-color: white;
+    margin-top: -1px;
+}
+
+/* 購物車區域 */
+.cart {
+    position: fixed;
+    top: 101px;
+    right: 0px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    z-index: 1050;
+    display: none;
+    /* 默認隱藏，點擊購物車按鈕顯示 */
+
+    min-width: 300px;
+    /* 最小寬度 */
+    max-width: 600px;
+    /* 最大寬度 */
+    width: auto;
+    /* 自動適應內容 */
+    word-wrap: break-word;
+    /* 如果內容太長，自動換行 */
+    max-height: 600px;
+    overflow-y: auto;
+}
+
+.cart::-webkit-scrollbar {
+    width: 8px;
+}
+
+.cart::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
+
+.cart::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.4);
+}
+
+
+.cart>div{
+    margin-bottom: 10px;
+}
+.close-cart {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: transparent;
+    color: gray;
+    font-size: 22px;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* 左右對齊 */
+    margin-bottom: 10px;
+    /* 商品之間的間距 */
+    width: 100%;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+
+.cart-itemphoto {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.decrease-quantity,
+.increase-quantity {
+    width: 30px;
+    /* 按鈕寬度 */
+    height: 20px;
+    /* 按鈕高度 */
+    display: inline-flex;
+    /* 讓按鈕內容居中 */
+    justify-content: center;
+    /* 水平居中 */
+    align-items: center;
+    /* 垂直居中 */
+    background-color: #007bff;
+    /* 按鈕背景色 */
+    color: white;
+    /* 按鈕文字顏色 */
+    border: none;
+    /* 移除邊框 */
+    border-radius: 4px;
+    /* 圓角 */
+    margin: 0 5px;
+    /* 左右間距 */
+    cursor: pointer;
+    /* 鼠標指針效果 */
+}
+
+.decrease-quantity:hover,
+.increase-quantity:hover {
+    background-color: #0056b3;
+    /* 滑鼠懸停背景色 */
+}
+
+
+
+.cart-item .remove-item {
+
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-left: auto;
+    /* border: 1px solid blue; */
+}
+
+.cart-item span {
+    flex-grow: 1;
+    /* 文字填充剩餘空間 */
+    margin-right: initial;
+    /* 確保文字和按鈕有間距 */
+    /* border: 1px solid green; */
+
+}
+
+.remove-item:hover {
+    background-color: #d32f2f;
+}
+
+/* 清空購物車 */
+#clear-cart {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-left: auto;
+    margin-top: 10px;
+}
+
+#clear-cart:hover {
+    background-color: #d32f2f;
+}
+
+#checkout-button {
+    text-decoration: none;
+    background-color: #ff9800;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    float: right;
+    margin-top: 10px;
+}
+
+#checkout-button:hover {
+    background-color: #e68900;
+}
+
+/* 聯絡我們框架 */
+.mail-all {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100px;
+    margin-bottom: 0.5vh;
+    padding-top: 1.5vh;
+    /* background-color: lightblue; */
+}
+
+.mail-all:hover>div {
+    color: #000;
+}
+
+/* 聯絡圖示按鈕 */
+.mail-icon {
+
+    /* margin-left: -1vw; */
+    /* border: 1px solid blue; */
+    justify-self: center;
+    width: 2vw;
+    cursor: pointer;
+    background-color: white;
+    border: none;
+}
+
+/* 聯絡文字 */
+.mail-word {
+
+    font-size: 1rem;
+    /* margin-left: -1vw; */
+    /* border: 1px solid red; */
+    color: gray;
+    text-align: left;
+    text-align: center;
+}
+
+/* 聯絡表單 */
+.contact-form {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    z-index: 1050;
+    width: 300px;
+}
+#close-contact{
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: transparent;
+    color: gray;
+    font-size: 22px;
+}
+
+.contact-form h2 {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
+/* 會員框架 */
+.member-all {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100px;
+    margin-top: -0.5vh;
+    padding-top: 1.5vh;
+    /* background-color: lightblue; */
+}
+
+.member-all:hover>.member-word {
+    color: #000;
+}
+
+/* 會員圖示按鈕 */
+.member-icon {
+
+    /* margin-left: -1vw; */
+    /* border: 1px solid blue; */
+    justify-self: center;
+    width: 2vw;
+    cursor: pointer;
+    background-color: white;
+    border: none;
+}
+
+/* 會員文字 */
+.member-word {
+
+    font-size: 1rem;
+    /* margin-left: -1vw; */
+    /* border: 1px solid red; */
+    color: gray;
+    text-align: left;
+    text-align: center;
+}
+
+/* 會員登錄 */
+
+.membertype {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+
+.login-submit {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.container button:hover {
+    opacity: 0.8;
+}
+
+
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+
+.closearea {
+
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-top: 60px;
+}
+
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto;
+
+    border: 1px solid #888;
+    width: 310px;
+    height: 400px;
+
+}
+
+
+.closebtn {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.closebtn:hover,
+.closebtn:focus {
+    color: red;
+    cursor: pointer;
+}
+
+
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {
+        -webkit-transform: scale(0)
+    }
+
+    to {
+        -webkit-transform: scale(1)
+    }
+}
+
+@keyframes animatezoom {
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
+
+.close-search{
+    display: none;
+}
+
+/* 摺疊菜單樣式 */
+.sidebar-menu {
+    position: fixed;
+    top: 0;
+    left: -300px;
+    width: 300px;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+    transition: left 0.3s ease;
+    z-index: 1040;
+    overflow-y: scroll;
+}
+
+.sidebar-menu::-webkit-scrollbar {
+    width: 8px;
+}
+
+.sidebar-menu::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 4px;
+}
+
+.sidebar-menu::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.sidebar-menu.open {
+    left: 0;
+}
+
+
+.submenu {
+    height: 0;
+    /* 初始高度為 0 */
+    overflow: hidden;
+    /* 隱藏內容 */
+    transition: height 0.3s ease;
+    /* 添加高度過渡效果 */
+}
+
+.submenu.open {
+    height: 275px;
+    /* 展開後的高度，根據內容調整 */
+}
+
+#submenu2 button {
+    display: block;
+    margin-bottom: 10px;
+    color: #0d6efd;
+}
+#submenu2 button:hover{
+    color: #0a58ca;
+}
+
+.submenu.open1 {
+    height: 500px;
+    /* 展開後的高度，根據內容調整 */
+
+}
+.body {
+    width: 1220px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* 輪播圖設定 */
+.slide {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    width: 100%;
+}
+
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* 活動導覽列 */
+.navbar {
+    border-radius: 15px;
+    margin: 15px auto;
+    display: flex;
+    width: 1220px;
+    height: 70px;
+    justify-content: space-between;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.navbar a {
+    text-decoration: none;
+    padding: 5px 10px;
+    font-weight: 700;
+    font-size: 20px;
+    color: gray;
+}
+
+.navbar a:hover {
+    color: #000;
+}
+
+/* 側邊商品導覽列 */
+.sidebar {
+    background-color: white;
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    width: 200px;
+    justify-self: center;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar button {
+    background-color: white;
+    width: 100%;
+    text-align: left;
+    border: none;
+    padding-left: 10px;
+    height: 50px;
+    color: gray;
+    margin: 10px 0;
+    position: relative;
+}
+
+.sidebar button:hover {
+    color: #000;
+}
+
+.sidebar button:last-child {
+    margin-bottom: 0;
+}
+
+.sidebar button::after {
+    content: "";
+    position: absolute;
+    right: 10px;
+    margin-top: 4.5px;
+    width: 16px;
+    height: 16px;
+    background-image: url('data:image/svg+xml,%3Csvg xmlns%3D%22http%3A//www.w3.org/2000/svg%22 width%3D%2216%22 height%3D%2216%22 fill%3D%22currentColor%22 class%3D%22bi bi-chevron-right%22 viewBox%3D%220 0 16 16%22%3E%3Cpath fill-rule%3D%22evenodd%22 d%3D%22M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708%22/%3E%3C/svg%3E');
+
+}
+
+.sidebar button::before {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    width: 100%;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: #f0f0f0;
+}
+
+.product_all {
+    border-radius: 10px;
+    position: relative;
+    /* 父容器需要設為相對定位 */
+    margin-left: 250px;
+}
+
+.sort {
+    position: absolute;
+    top: 12.5px;
+    right: 20px;
+    /* 靠右對齊 */
+
+}
+
+.sort button {
+    color: gray;
+    border: none;
+    margin-left: 15px;
+    width: 100px;
+    background-color: white;
+}
+
+.sort button:hover {
+    color: black;
+}
+
+.sort button.active {
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+}
+
+/* 商品展示區 */
+.product-grid {
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* 響應式設計 */
+    gap: 20px;
+    /* 卡片間距 */
+    padding: 20px;
+    padding-top: 50px;
+    background-color: white;
+    /* 背景色 */
+}
+
+/* 單個商品卡片 */
+.product-card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* 卡片陰影 */
+    background-color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    /* 提升效果 */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    /* 顯示陰影 */
+}
+
+/* 商品圖片 */
+.product-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    /* 確保圖片比例 */
+    background-color: black;
+    /* 模擬黑色區域 */
+}
+
+/* 商品資訊 */
+.product-info {
+    padding: 15px;
+    text-align: center;
+}
+
+.product-info h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.product-info p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.product-info button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.product-info button:hover {
+    background-color: #0056b3;
+}
+
+/* 商品分頁 */
+.pagination-controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pagination-button {
+    padding: 10px 15px;
+    margin: 0 5px;
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.pagination-button.active {
+    background-color: #007bff;
+    color: white;
+    border-color: #0056b3;
+}
+
+.pagination-button:hover {
+    background-color: #e2e6ea;
+}
+
+.To-Top {
+    position: fixed;
+    height: 40px;
+    width: 40px;
+    right: 0;
+    bottom: 200px;
+    background-color: rgba(128, 128, 128, 0.5);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.To-Top-arrow {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+}
+
+footer {
+    margin-top: 10px;
+    background-color: white;
+}
+
+.footer-all {
+    align-items: flex-start;
+    display: flex;
+    justify-content: flex-start;
+    margin: auto;
+    max-width: 1200px;
+    padding: 30px 8px;
+}
+
+.footer-all>div {
+    margin-right: 50px;
+}
+
+.footer-quick-links a {
+    align-items: flex-start;
+    text-decoration: none;
+    display: flex;
+    color: gray;
+    justify-content: flex-start;
+    line-height: 19px;
+    padding: 4px 0;
+}
+
+.footer-social-media a {
+    align-items: flex-start;
+    text-decoration: none;
+    display: flex;
+    color: gray;
+    justify-content: flex-start;
+    line-height: 19px;
+    padding: 4px 0;
+}
+
+.footer-quick-links a:hover,
+.footer-social-media a:hover {
+    color: #000;
+}
+
+.footer-hr {
+    border-bottom: 1px solid rgba(17, 20, 24, .15);
+}
+
+.copyright {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+   
+    .header_all {
+        max-width: 768px;
+        /* flex-wrap: wrap; */
+        height: 75px;
+        /* justify-content: center; */
+    }
+
+    #logo {
+        position: relative;
+        left: 346.5px;
+    }
+
+    #icon {
+        height: 75px;
+        margin: 0;
+    }
+
+    .quick-links {
+        display: none;
+    }
+
+    #forsearch{
+        width: 500px;
+    }
+    .search-all {
+        display: none;
+        width : 500px;
+        margin-top: -10px;
+    }
+
+    .cart-all,
+    .mail-all,
+    .member-all {
+        display: none;
+    }
+    
+    .search-button {        
+        display: block;       
+    }
+    
+    .close-search{
+        right: 0;
+        margin-top: -1px;
+    }
+    .menu-icon {
+        display: flex;
+        
+    } 
+
+    .cart {
+        top: 75px;
+        max-height: 500px;
+    }    
+    
+    .contact-form{
+        position: fixed;
+        top: 75px;
+        right: 0px;
+    }
+    .body {
+        width: 768px;
+    }    
+
+    .navbar {
+        display: none;
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+    .product_all {
+        width: 100%;
+        margin-top: 20px;
+        margin-left: 0;
+    }
+
+    .footer-all {
+        width: 768px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+    .header_all {
+        max-width:100%;
+        /* flex-wrap: wrap; */
+        height: 75px;
+        /* justify-content: center; */
+    }
+
+    #logo {
+        position: relative;
+        margin: 0 auto;
+    }
+
+    #icon {
+        height: 75px;
+        margin: 0;
+    }
+
+    .quick-links {
+        display: none;
+    }
+
+    #forsearch{
+        width: 100%;
+
+    }
+    .search-all {
+        display: none;
+        width : 50%;
+        margin: 0 auto;
+        margin-top: -10px;
+        transform: translateX(-40px);
+    }
+
+    .cart-all,
+    .mail-all,
+    .member-all {
+        display: none;
+    }
+    
+    .search-button {        
+        display: block;       
+    }
+    
+    .close-search{
+        right: 0;
+        margin-top: -1px;
+    }
+    .menu-icon {
+        display: flex;        
+    } 
+
+    .cart {
+        position: fixed;
+        top: 75px;
+        z-index: 1080;
+        max-height: 400px;
+    }    
+    
+    .cartnumbercontrol{
+        display: block;
+    }
+
+    .contact-form{
+        position: fixed;
+        top: 75px;
+        right: 0px;
+    }
+    .body {
+        width: 100%;
+    }    
+
+    .navbar {
+        display: none;
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+    .sort button{
+        font-size: 12px;
+        margin-left: 10px;
+        padding: 0;
+        width: initial;
+    }
+
+    .product_all {
+        width: 100%;
+        margin-top: 20px;
+        margin-left: 0;
+    }
+
+    .product-grid{
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+
+    .product-image img{
+        height: 100%;
+        object-fit: contain;
+    }
+
+    .product-info{
+        padding: 5px;
+    }
+
+    .product-info p {
+        font-size: 12px;
+        color: #555;
+        margin-bottom: 15px;
+    }
+
+    .product-info button{
+        font-size: 12px;
+        width: 80%;
+        padding: 5px;
+    }
+    .footer-all {
+        width: 320px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .footer-all>div{
+        margin-bottom: 5px;
+    }
+}

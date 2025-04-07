@@ -1,0 +1,364 @@
+[
+    {
+      "name": "狗狗飼料1",
+      "price": 1000,
+      "rating": 4.5,
+      "new": 10,
+      "category": "狗狗飼料",
+      "image": "img/dog-food1.webp"
+    },
+    {
+      "name": "狗狗飼料2",
+      "price": 800,
+      "rating": 4.2,
+      "new": 5,
+      "category": "狗狗飼料",
+      "image": "img/dog-food2.webp"
+    },
+    {
+      "name": "狗狗飼料3",
+      "price": 700,
+      "rating": 4.2,
+      "new": 8,
+      "category": "狗狗飼料",
+      "image": "img/dog-food3.webp"
+    },
+    {
+      "name": "狗狗飼料4",
+      "price": 850,
+      "rating": 4.6,
+      "new": 10,
+      "category": "狗狗飼料",
+      "image": "img/dog-food4.webp"
+    },
+    {
+      "name": "狗狗飼料5",
+      "price": 900,
+      "rating": 4.8,
+      "new": 4,
+      "category": "狗狗飼料",
+      "image": "img/dog-food5.webp"
+    },
+    {
+      "name": "貓咪飼料1",
+      "price": 1200,
+      "rating": 3.5,
+      "new": 2,
+      "category": "貓咪飼料",
+      "image": "img/cat-food1.webp"
+    },
+    {
+      "name": "貓咪飼料2",
+      "price": 980,
+      "rating": 4.2,
+      "new": 6,
+      "category": "貓咪飼料",
+      "image": "img/cat-food2.webp"
+    },
+    {
+      "name": "貓咪飼料3",
+      "price": 860,
+      "rating": 3.8,
+      "new": 8,
+      "category": "貓咪飼料",
+      "image": "img/cat-food3.webp"
+    },
+    {
+      "name": "貓咪飼料4",
+      "price": 650,
+      "rating": 4.7,
+      "new": 8,
+      "category": "貓咪飼料",
+      "image": "img/cat-food4.webp"
+    },
+    {
+      "name": "貓咪飼料5",
+      "price": 560,
+      "rating": 3.5,
+      "new": 5,
+      "category": "貓咪飼料",
+      "image": "img/cat-food5.webp"
+    },
+    {
+      "name": "貓咪罐頭1",
+      "price": 220,
+      "rating": 3.8,
+      "new": 6,
+      "category": "貓咪罐頭",
+      "image": "img/cat_can1.webp"
+    },
+    {
+      "name": "貓咪罐頭2",
+      "price": 130,
+      "rating": 3.2,
+      "new": 2,
+      "category": "貓咪罐頭",
+      "image": "img/cat_can2.webp"
+    },
+    {
+      "name": "貓咪罐頭3",
+      "price": 320,
+      "rating": 4.1,
+      "new": 6,
+      "category": "貓咪罐頭",
+      "image": "img/cat_can3.webp"
+    },
+    {
+      "name": "貓咪罐頭4",
+      "price": 300,
+      "rating": 3.9,
+      "new": 4,
+      "category": "貓咪罐頭",
+      "image": "img/cat_can4.webp"
+    },
+    {
+      "name": "貓咪罐頭5",
+      "price": 400,
+      "rating": 4.9,
+      "new": 8,
+      "category": "貓咪罐頭",
+      "image": "img/cat_can5.webp"
+    },
+    {
+      "name": "狗狗罐頭1",
+      "price": 560,
+      "rating": 3.8,
+      "new": 1,
+      "category": "狗狗罐頭",
+      "image": "img/dog_can1.webp"
+    },
+    {
+      "name": "狗狗罐頭2",
+      "price": 120,
+      "rating": 3.2,
+      "new": 0,
+      "category": "狗狗罐頭",
+      "image": "img/dog_can2.webp"
+    },
+    {
+      "name": "狗狗罐頭3",
+      "price": 245,
+      "rating": 4.1,
+      "new": 8,
+      "category": "狗狗罐頭",
+      "image": "img/dog_can3.webp"
+    },
+    {
+      "name": "狗狗罐頭4",
+      "price": 365,
+      "rating": 4.2,
+      "new": 7,
+      "category": "狗狗罐頭",
+      "image": "img/dog_can4.webp"
+    },
+    {
+      "name": "狗狗罐頭5",
+      "price": 400,
+      "rating": 4.5,
+      "new": 10,
+      "category": "狗狗罐頭",
+      "image": "img/dog_can5.webp"
+    },
+    {
+      "name": "貓狗零食1",
+      "price": 125,
+      "rating": 4.4,
+      "new": 5,
+      "category": "貓狗零食",
+      "image": "img/肉乾1.webp"
+    },
+    {
+      "name": "貓狗零食2",
+      "price": 254,
+      "rating": 3.5,
+      "new": 5,
+      "category": "貓狗零食",
+      "image": "img/肉乾2.webp"
+    },
+    {
+      "name": "貓狗零食3",
+      "price": 342,
+      "rating": 4.2,
+      "new": 8,
+      "category": "貓狗零食",
+      "image": "img/貓狗零食.webp"
+    },
+    {
+      "name": "貓狗零食4",
+      "price": 360,
+      "rating": 4.7,
+      "new": 7,
+      "category": "貓狗零食",
+      "image": "img/貓條1.webp"
+    },
+    {
+      "name": "貓狗零食5",
+      "price": 360,
+      "rating": 4.7,
+      "new": 8,
+      "category": "貓狗零食",
+      "image": "img/貓條2.webp"
+    },
+    {
+      "name": "貓狗玩具1",
+      "price": 530,
+      "rating": 4.2,
+      "new": 4,
+      "category": "貓狗玩具",
+      "image": "img/toy_1.webp"
+    },
+    {
+      "name": "貓狗玩具2",
+      "price": 440,
+      "rating": 4.4,
+      "new": 4,
+      "category": "貓狗玩具",
+      "image": "img/toy_2.webp"
+    },
+    {
+      "name": "貓狗玩具3",
+      "price": 333,
+      "rating": 3.3,
+      "new": 3,
+      "category": "貓狗玩具",
+      "image": "img/toy_3.webp"
+    },
+    {
+      "name": "貓狗玩具4",
+      "price": 180,
+      "rating": 4.5,
+      "new": 1,
+      "category": "貓狗玩具",
+      "image": "img/toy_4.webp"
+    },
+    {
+      "name": "貓狗玩具5",
+      "price": 200,
+      "rating": 4.3,
+      "new": 10,
+      "category": "貓狗玩具",
+      "image": "img/toy_5.webp"
+    },
+    {
+      "name": "貓狗清潔1",
+      "price": 800,
+      "rating": 4.2,
+      "new": 5,
+      "category": "清潔保健",
+      "image": "img/clean_1.webp"
+    },
+    {
+      "name": "貓狗清潔2",
+      "price": 500,
+      "rating": 4.1,
+      "new": 7,
+        "category": "清潔保健",
+      "image": "img/clean_2.webp"
+    },
+    {
+      "name": "貓狗清潔3",
+      "price": 320,
+      "rating": 3.8,
+      "new": 5,
+      "category": "清潔保健",
+      "image": "img/clean_3.webp"
+    },
+    {
+      "name": "貓狗清潔4",
+      "price": 500,
+      "rating": 5,
+      "new": 5,
+      "category": "清潔保健",
+      "image": "img/clean_4.webp"
+    },
+    {
+      "name": "貓狗清潔5",
+      "price": 450,
+      "rating": 4.2,
+      "new": 6,
+      "category": "清潔保健",
+      "image": "img/clean_5.webp"
+    },
+    {
+      "name": "貓砂用品1",
+      "price": 700,
+      "rating": 4.7,
+      "new": 7,
+      "category": "貓砂用品",
+      "image": "img/item_1.webp"
+    },
+    {
+      "name": "貓砂用品2",
+      "price": 850,
+      "rating": 4.8,
+      "new": 8,
+      "category": "貓砂用品",
+      "image": "img/item_2.webp"
+    },
+    {
+      "name": "貓砂用品3",
+      "price": 650,
+      "rating": 4.2,
+      "new": 4,
+      "category": "貓砂用品",
+      "image": "img/item_3.webp"
+    },
+    {
+      "name": "貓砂用品4",
+      "price": 650,
+      "rating": 2.5,
+      "new": 1,
+      "category": "貓砂用品",
+      "image": "img/item_4.webp"
+    },
+    {
+      "name": "貓砂用品5",
+      "price": 10,
+      "rating": 5,
+      "new": 10,
+      "category": "貓砂用品",
+      "image": "img/item_5.webp"
+    },
+    {
+      "name": "外出用品1",
+      "price": 1200,
+      "rating": 3.5,
+      "new": 5,
+      "category": "外出用品",
+      "image": "img/out_1.webp"
+    },
+    {
+      "name": "外出用品2",
+      "price": 580,
+      "rating": 4.1,
+      "new": 0,
+      "category": "外出用品",
+      "image": "img/out_2.webp"
+    },
+    {
+      "name": "外出用品3",
+      "price": 580,
+      "rating": 4,
+      "new": 2,
+      "category": "外出用品",
+      "image": "img/out_3.webp"
+    },
+    {
+      "name": "外出用品4",
+      "price": 150,
+      "rating": 1.5,
+      "new": 4,
+      "category": "外出用品",
+      "image": "img/out_4.webp"
+    },
+    {
+      "name": "外出用品5",
+      "price": 1000,
+      "rating": 4.5,
+      "new": 10,
+      "category": "外出用品",
+      "image": "img/out_5.webp"
+    }
+    
+    
+  ]
